@@ -9,7 +9,7 @@ class FBPoster < Sinatra::Base
     disable :logging
   end
 
-  get '/fbg/:page_id/:token' do |page_id, token|
+  post '/fbg/:page_id/:token' do |page_id, token|
     @group = FbGraph::Group.new(params[:page_id], access_token: params[:token])
     res = @group.feed! message: 'getchef blogの更新 via feedposter from zapier', link: params[:link]
   end
