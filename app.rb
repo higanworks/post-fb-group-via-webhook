@@ -5,7 +5,6 @@ require 'uri'
 
 class FBPoster < Sinatra::Base
 
-  logger = ::Logger.new($stdout)
   configure do
     disable :logging
   end
