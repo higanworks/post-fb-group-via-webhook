@@ -2,6 +2,8 @@
 
 ## Requirement
 
+- Facebook OAUTH Token.
+
 ### Scope
 
 - user_manged_groups
